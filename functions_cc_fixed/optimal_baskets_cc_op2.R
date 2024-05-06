@@ -1,7 +1,6 @@
 optimal_baskets <- function(species, tech, cost, baskets, mort_guess, years){
   # Load the two functions
   source(here("functions_cc_fixed", "qb_stock_m_cc_op2.R"))
-  #source(here("functions_cc_fixed", "qb_stock_for_optim_cc2.R"))
   # Optimize over baskets:
   mortality <- mort_guess
   # Run qb_stock for the optimal mortalities
