@@ -11,20 +11,11 @@ rm(list = ls(all = TRUE))
 # packages
 library(tidyverse)
 library(here)
-library(scales)
-library(gridExtra)
-library(grid)
-library(kableExtra)
-library(ggtext)
-library(ggplot2)
-library(ggrepel)
-library(metR)
 
 # Where to save datasets
 fileplace <- "3 Belize"
 # Type of model, in this case we have the simple scenarios
 fileplace1 <- "basket7"
-fileplace2 <- "figures"
 
 ########################################################################
 ########################################################################
@@ -240,6 +231,7 @@ basket <-  left_join(basket1_bio, basket1_har, by=c('basket', "per_quota", "year
 write.table(basket, here(fileplace, "all_results","results", "basket7.csv"),
             row.names=FALSE, sep=",")
 
+#verification
 atest <- basket %>% 
   filter(exploitation.rate>1)
 

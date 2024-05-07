@@ -1,7 +1,9 @@
 # faceted graph
 
-# package
+# erase
 rm(list=ls())
+
+# package
 library(tidyverse)
 library(here)
 library(RColorBrewer)
@@ -11,6 +13,7 @@ library(RColorBrewer)
 results <- read_csv(here("3 Belize", "all_results", "results", "final", "result_basket.csv")) 
 #results[with(results, order(per_quota, year)),]
 
+# verification of max exploitation rate
 max_rate <- max(results$exploitation.rate, na.rm=T)
 
 
@@ -166,7 +169,7 @@ plot_list <- list()
 
 # Loop from 1 to 13 (excluding 6 and 12)
 for (i in 1:13) {
-  if (i != 6) {
+  if (i != 6 && i != 11 && i != 12) {
     # Substitute the value of i into the code
     plot <- ggplot(data = results1 %>% filter(basket == i), aes(x = year, y = result, group = per_quota)) + 
       geom_line(aes(color = per_quota)) +

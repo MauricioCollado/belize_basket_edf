@@ -1,8 +1,6 @@
 ###### Different progress for each limit
 ###### Code by Mauricio Collado
 
-###### Different progress for each limit, start at max K
-
 # erase
 rm(list = ls(all = TRUE)) 
 
@@ -34,7 +32,6 @@ qi4 <- 0.000381703
 #qi4 <- 0.017202636
 #qi5 <- 0.000874
 #qi6 <- 0.000874
-
 
 
 qi7 <- 0 #complete other with zero
@@ -77,8 +74,6 @@ temp_anom=temp-temp_base
 
 k1 <- 125.811 #Black grouper
 k2 <- 522.7108 #Goliath grouper
-#k3 <- 1513.245 #Tiger grouper
-#k4 <- 1465.512 #Yellowfin grouper
 k3 <- 763.0717 #Tiger grouper
 k4 <- 710.4941 #Yellowfin grouper
 

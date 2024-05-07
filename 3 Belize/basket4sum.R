@@ -1,8 +1,6 @@
 ###### Different progress for each limit
 ###### Code by Mauricio Collado
 
-###### Different progress for each limit, start at max K
-
 # erase
 rm(list = ls(all = TRUE)) 
 

@@ -63,7 +63,6 @@ result_basket$species[result_basket$species == "bay snook"] = "Bay snook"
 result_basket$species[result_basket$species == "snook"] = "Snook"
 result_basket$species[result_basket$species == "black-eyed catfish"] = "Black-eyed catfish"
 
-
 #max_test1 <- max(result_basket$exploitation.rate, na.rm=T)
 
 write.table(result_basket, here(fileplace, "all_results","results", "final", "result_basket.csv"),
